@@ -4,7 +4,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <sys/time.h>
-//#include "/usr/local/gmp.h"
+#include "/usr/local/gmp.h"
 #include "gmp.h"
 
 #define ROW 2
@@ -39,14 +39,15 @@ void mpzMatrixMultiply(mpz_t A[ROW][COL],mpz_t B[ROW][COL],mpz_t result[ROW][COL
 }
 
 char* binaryExponentiationArray(unsigned n){
-    unsigned n_inner=n;
+    unsigned nCopy=n;
     char* result=(char*)malloc(32*sizeof(unsigned));
     unsigned char resultIndex=0;
-    while(n_inner){
-        if(n_inner&1){
+    while(nCopy){
+        result[resultIndex]=0;
+        if(nCopy&1){
             result[resultIndex]=1;
         }
-        n_inner=n_inner>>1;
+        nCopy=nCopy>>1;
         resultIndex++;
     }
     return result;
