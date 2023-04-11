@@ -17,4 +17,5 @@ gcc -o f main.c -lgmp
 #Algorithm
 
 Binary Exponentiation and optimized.
+
 <img width="396" alt="image" src="https://user-images.githubusercontent.com/98176983/231103582-83a90f0d-e616-4dce-b433-f7aba9b247e8.png">
