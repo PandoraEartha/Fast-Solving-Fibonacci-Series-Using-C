@@ -3,7 +3,7 @@ Use C and GMP library to calculate any term of Fibonacci Series very fast
 
 使用C语言和GMP库快速求解斐波那契数列任意一项
 
-#Usage
+# Usage
 
 Download main.c and be sure that you have installed GMP library.
 
@@ -14,7 +14,7 @@ gcc -o f main.c -lgmp
 ./f 10000000
 ```
 
-#Algorithm
+# Algorithm
 
 Binary Exponentiation and optimized.
 
